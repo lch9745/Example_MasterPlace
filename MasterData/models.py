@@ -2,12 +2,18 @@ from django.db import models
 
 # Create your models here.
 
-class MasterData(models.Model):
-    Country_name = models.CharField(max_length=30)
-    City_name = models.CharField(max_length=30)
-    Place_name = models.CharField(max_length=30)
 
 
-    Country_id = models.CharField(max_length=30)
-    City_id = models.CharField(max_length=30)
-    Place_id = models.CharField(max_length=30)
+
+class Country_Data(models.Model):
+    name = models.CharField(max_length=30)
+    Data_id = models.CharField(max_length=30)
+    
+
+class City_Data(models.Model):
+    name = models.CharField(max_length=30)
+    Data_id = models.CharField(max_length=30)
+
+class Place_Data(models.Model):
+    name = models.CharField(max_length=30)
+    Data_id = models.CharField(max_length=30)

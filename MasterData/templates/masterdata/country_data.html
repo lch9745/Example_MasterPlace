@@ -22,22 +22,23 @@
             추가</span></button>
         </form>
     </div>
+    
     <form  class = "Masterdb">
-
         <select name="country" style="width:190px">
-            <option value="none">===선택===</option>
-            {% for question in latest_question_list %}
-                <option value="none">{{question.name}}</option>            
-            {% endfor %}
+            <option value="none">===선택===</option>            
+            {% for Country in Country_list %}
+                <option value="none">{{ Country.name }}</option>
+            {% endfor %}            
         </select>
         
         <select name="city" style="width:190px">
-            <option value="none">===선택===</option>
-            
-        </select>
-        <select name="place" style="width:190px">
-            <option value="none">===선택===</option>
-        </select>
+            <option value="none">===선택===</option>            
+            {% for City in City_list %}
+                <option value="none">{{ City.name }}</option>
+            {% endfor %}            
+        </select>        
+
+
     </form>
     
     
